@@ -2,14 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jacquard 12", system-ui;
 }
 
 :root {
     --main-backgroun: #f0fdf4;
     --text-color: #052e16;
+    --nav-backgroun: #bbf7d0;
+    --a-backgroun: #14532d;
+    --textcolor2: #166534;
 }
 
 body{
     background: var(--main-backgroun);
-    color: var(--text-color)
+    color: var(--text-color);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav {
+    background: var(--nav-backgroun);
+    width: fit-content;
+    padding: 30px;
+    border-radius: 100vh;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover{
+    color: var(--textcolor2);
+    text-decoration: underline;
+}
+
+ul, li {
+    list-style: none;
 }
